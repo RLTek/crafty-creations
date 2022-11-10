@@ -7,12 +7,14 @@ html {
     text-align: center;
     color: white;
     background-image: linear-gradient(135deg, red,orange,yellow,green,blue,indigo,violet);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1, h2, h3, h4 {
     background-image: linear-gradient(to right, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;   
 }
 
 p{
@@ -137,6 +139,7 @@ p{
 .products h2{
     letter-spacing: .1em;
     font-family: 'Permanent Marker', cursive;
+    height: 2em;
     
 }
 
@@ -162,7 +165,10 @@ p{
     opacity: .9;
     margin: 5em;
     border-radius: .5em;
+    height: 2.5em;
+    
 }
+
 /*About section*/
 .about img{
     width: 15em;
@@ -180,10 +186,11 @@ p{
     letter-spacing: .1em;
 }
 
+
 /*Footer section*/
 .contact{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 3em;
     background-color: black;
     border-radius: 2em;
@@ -194,14 +201,16 @@ p{
     height: 3em;
     border-radius: 50%;
     margin: auto;
+    margin-top: .5em;
 }
-.contact-text {
-     display: none;   
-}
+
 .contact-option{
     align-self: center;
     margin-right: 1em;
     margin-left: 1em;
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
 }
 
 /* For screen sizes 800px+*/
@@ -246,6 +255,7 @@ p{
     }
     .about-text{
         margin-top: 0;
+        
     }
     .about-section {
         max-width: 50em;
@@ -255,13 +265,16 @@ p{
     .contact{
         display: flex;
         align-items: center;
+        max-width: 60em;
+        margin: auto;
+        margin-top: 2em;
     }
     .contact-option {
         display: flex;
         align-content: center;
         margin-left: 1em;
     }
-    .contact-option p{
+    .contact-option h2{
         margin-right: 2em;
         margin-left: 2em;
     }
@@ -270,5 +283,8 @@ p{
     }
     .contact-text{
         display: block;
+    }
+    .contact img{
+        margin-top: .5em;
     }
 }
